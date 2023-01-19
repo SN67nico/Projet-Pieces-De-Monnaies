@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Les premières monnaies</title>
+        <link rel="stylesheet" href="https://projetnsimonnaies.000webhostapp.com/ModeClair.css"/>
+        <script type="text/JavaScript">
+        function ChangerMode()
+        {
+                var Lib = document.getElementById("Mode").innerHTML;
+                if(Lib === "Mode Sombre")
+                {
+                    document.getElementById("Mode").innerHTML = "Mode Clair";
+                    document.getElementsByTagName("link")[0].href = "https://projetnsimonnaies.000webhostapp.com/ModeSombre.css";  
+                    document.getElementById("Logo").setAttribute('src', 'NapoNoir.png');  
+                }
+                else
+                {
+                    document.getElementById("Mode").innerHTML = "Mode Sombre";
+                    document.getElementsByTagName("link")[0].href = "https://projetnsimonnaies.000webhostapp.com/ModeClair.css";
+                    document.getElementById("Logo").setAttribute('src', 'NapoBlanc.png'); 
+                }
+                
+        }   
+        function OuvrirMaps()
+        {
+            window.open("OuvrirMaps.html","MeSituer","menubar=no, status=no, scrollbars=no, menubar=no, width=400, height=450");
+        }
+        function Remonter()
+        {
+            window.scroll(0, 0);
+        }
+        function action(entree,sortie)
+            {
+                var choix = document.getElementById(entree).selectedIndex;
+                switch(choix)
+                {
+                    case 0 :
+                        document.getElementById(sortie).innerHTML = '<p> <img src="https://investissements-rentables.fr/investir/wp-content/uploads/2021/06/coin-gold-eagle.jpg" width="200" height="100" style="border-color:#000000;" border="3"> </p>'
+                        break;
+                    case 1 :
+                        document.getElementById(sortie).innerHTML = '<p> <img src="https://images.pcgs.com/CoinFacts/09864512_156387785_2200.jpg" width="200" height="100" style="border-color:#000000;" border="3"> </p>'
+                        break;
+                    case 2 :
+                        document.getElementById(sortie).innerHTML = '<p><img src="https://i.pinimg.com/originals/fb/42/50/fb4250b59fd1e590e3c475eda512feee.jpg" width="200" height="100" style="border-color:#000000;" border="3"> </p>'
+                        break;
+                    case 3 :
+                        document.getElementById(sortie).innerHTML = '<p><img src="https://images3.cgb.fr/images/monnaies/v11/v11_0572.jpg" width="200" height="100" style="border-color:#000000;" border="3"> </p>'
+                        break;
+                    case 4 :
+                        document.getElementById(sortie).innerHTML = '<p><img src="https://www.usgoldbureau.com/media/amasty/blog/uploads/2012/05/1913-liberty-head-nickel.jpg" width="200" height="100" style="border-color:#000000;" border="3"> </p>'
+                        break;
+                    default :
+                }
+            }
+    </script>
+    </head>
+<body onload = "action('nom','sortie');">
+
+        <br>
+        <br>
+        <br>
+
+        <nav class="menu">
+            <ul class="menu_ul">
+                <li><img id="Logo" width="100" height="100" src="NapoBlanc.png" ></li>
+                <li><a href="1)Les premieres monnaies.html" class="lien">Les Premières Monnaies</a> </li>
+                <li><a href="2)Leurs valeurs.html" class="lien">Leurs Valeurs</a> </li>
+                <li><a href="3)Leurs Matieres.html" class="lien">Leurs Matières</a> </li>
+                <li><a href="4)Euro.html" class="lien">L'Euro</a> </li>
+            </ul>
+        </nav>
+        <br>
+       <section id="SectionBienvenue" class="Bienvenue">                
+                <div class="TexteBienvenue">
+                    <h1>En apprendre d'avantage sur les pièces de monnaies</h1>
+                    <p>Vous trouverez sur ce site tout types d'informations utiles pour améliorer vos connaissances sur la numismatique.
+                </div>
+                <div class="PhotoBienvenue">
+                    <img width="200" height="1000" src="Louis.png" >
+                </div>
+        </section>
+<br><br>
+<section id="SectionMonnaie" class="Monnaie">                
+                <div class="TexteMonnaie">
+                    <h1>Les cinqs monnaies les plus chères</h1>
+                </div>
+</section>
+<section id="SectionMonnaie" class="Monnaie">    
+                <div style =margin-right= "50px" ;margin-left="100px">
+                    <h1>&nbsp</h1>
+                </div>            
+                <table border="1" width="500">
+                 <tr>
+                    <th>N°</th>
+                    <th>Nom</th>
+                    <th>Date</th>
+                    <th>Pays</th>
+                    <th>Prix</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>DOUBLE EAGLE</td>
+                    <td>1933</td>
+                    <td>États-Unis</td>
+                    <td>16,2M €</td>
+                    
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>FLOWING HAIR</td>
+                    <td>1794</td>
+                    <td>États-Unis</td>
+                    <td>8,5M €</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>BRASHER DOUBLOON</td>
+                    <td>1787</td>
+                    <td>États-Unis</td>
+                    <td>8M €</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>DINAR OMEYYADE</td>
+                    <td>723</td>
+                    <td>Arabie Saoudite</td>
+                    <td>5,1M €</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>LIBERTY HEAD</td>
+                    <td>1913</td>
+                    <td>États-Unis</td>
+                    <td>3,8M €</td>
+                </tr>
+                
+            </table>
+            
+            <select id="nom" onchange = "action('nom','sortie');" style="width=100px;">
+                    <option value="Double Eagle">Double Eagle</option>
+                    <option value="Flowing Hair">Flowing Hair</option>
+                    <option value="Brasher Doubloon">Brasher Doubloon</option>
+                    <option value="Dinar Omeyyade">Dinar Omeyyade</option>
+                    <option value="Liberty Head Nickel">Liberty Head Nickel</option>
+            </select>
+            <div id = "sortie"></div>
+            &nbsp&nbsp&nbsp&nbsp
+        </section>
+<br><br>
+<section id="SectionMonnaie" class="Monnaie">                
+                </div>
+                <div class="PhotoMonnaie">
+                    <img  src="PiecesAmericaines.png" >
+                </div>
+                <div class="TexteMonnaie">
+                    <h1>Comment se forme la valeur d'une monnaie ?</h1>
+                    <p>La valeur de la plupart des "grandes" monnaies (les plus utilisées pour le commerce et la finance) - comme le dollar américain, l’euro, le yen japonais ou la livre sterling - dépend du prix du marché. Le cours de l’euro en dollar, du dollar en euro, de l’euro en yen, du yen en dollar, etc. varie en permanence, au gré des transactions réalisées par les opérateurs dans les salles des banques ou des bourses</p>
+        </section>
+<br><br>
+<footer class="main-footer">
+        <div class="BasDePage">
+            <table width="100%" border="0">
+                <tr>
+                    <td width="70%">Nicolas SCHMITT 1ère2</td>
+                    <td width="10%"><button id = "#Top" onclick = "Remonter()">Remonter</button></td>
+                    <td width="10%"><button id = "Maps" onclick = "OuvrirMaps()">Me situer</button></td>
+                    <td width="10%"><button id = "Mode" onclick = "ChangerMode()">Mode Sombre</button></td>
+                </tr>
+                </table> 
+        </div>
+    </footer>    
+</body>
+</html>

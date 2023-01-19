@@ -1,0 +1,104 @@
+.menu{
+    position: relative;
+    height: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.menu_ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.lien{
+    display: block;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.lien:hover{
+    color: #ffd700;
+}
+
+.Bienvenue{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 3%;
+    background-color: #F9E79F;
+}
+
+.TexteBienvenue{
+    flex: 1;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.TexteBienvenue h1{
+    font-size: 30px;
+}
+
+.TexteBienvenue p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.PhotoBienvenue img{
+    height: 200px;
+     margin-top: 10px;
+     margin-right: 10px;
+     margin-bottom: 5px;
+}
+.Monnaie{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    background-color: #868992;
+}
+
+.TexteMonnaie{
+    flex: 1;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.TexteMonnaie h1{
+    font-size: 30px;
+}
+
+.TexteMonnaie p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.PhotoMonnaie img{
+    height: 200px;
+     margin-top: 10px;
+     margin-right: 10px;
+     margin-left: 50px;
+     margin-bottom: 5px;
+}
+
+.BasDePage{
+    color:white;
+    display: flex;
+    width: 80%;
+    height: 50px;
+    background-color: #2C3E50;
+    margin: auto;
+    align-items: center;
+}

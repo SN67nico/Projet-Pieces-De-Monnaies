@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Les premières monnaies</title>
+        <link rel="stylesheet"href="https://projetnsimonnaies.000webhostapp.com/ModeClair.css"/>
+        <script type="text/JavaScript">
+        function ChangerMode()
+        {
+                var Lib = document.getElementById("Mode").innerHTML;
+                if(Lib === "Mode Sombre")
+                {
+                    document.getElementById("Mode").innerHTML = "Mode Clair";
+                    document.getElementsByTagName("link")[0].href = "https://projetnsimonnaies.000webhostapp.com/ModeSombre.css";  
+                    document.getElementById("Logo").setAttribute('src', 'NapoNoir.png');  
+                }
+                else
+                {
+                    document.getElementById("Mode").innerHTML = "Mode Sombre";
+                    document.getElementsByTagName("link")[0].href = "https://projetnsimonnaies.000webhostapp.com/ModeClair.css";
+                    document.getElementById("Logo").setAttribute('src', 'NapoBlanc.png'); 
+                }
+                
+        }   
+        function OuvrirMaps()
+        {
+            window.open("OuvrirMaps.html","MeSituer","menubar=no, status=no, scrollbars=no, menubar=no, width=400, height=450");
+        }
+        function Remonter()
+        {
+            window.scroll(0, 0);
+        }
+    </script>
+    </head>
+<body>
+        <br>
+        <br>
+        <br>
+        <nav class="menu">
+            <ul class="menu_ul">
+                <li><img id="Logo" width="100" height="100" src="NapoBlanc.png" ></li>
+                <li><a href="1)Les premieres monnaies.html" class="lien">Les Premières Monnaies</a> </li>
+                <li><a href="2)Leurs valeurs.html" class="lien">Leurs Valeurs</a> </li>
+                <li><a href="3)Leurs Matieres.html" class="lien">Leurs Matières</a> </li>
+                <li><a href="4)Euro.html" class="lien">L'Euro</a> </li>
+            </ul>
+        </nav>
+        <br>
+       <section id="SectionBienvenue" class="Bienvenue">                
+                <div class="TexteBienvenue">
+                    <h1>En apprendre d'avantage sur les pièces de monnaies</h1>
+                    <p>Vous trouverez sur ce site tout types d'informations utiles pour améliorer vos connaissances sur la numismatique.</p>
+                </div>
+                <div class="PhotoBienvenue">
+                    <img width="200" height="1000" src="Louis.png" >
+                </div>
+        </section>
+<br><br>
+<section id="SectionMonnaie" class="Monnaie">                
+                </div>
+                <div class="PhotoMonnaie">
+                    <img width="200" height="1000" src="lapremieremonnaie.png" >
+                </div>
+                <div class="TextePremiereMonnaie">
+                    <h1>Les premières monnaies</h1>
+                    <p>Les premières pièces de monnaie ont eu, semble-t-il, pour principal but de satisfaire l'ego des cités et de leurs dirigeants. En effet il en allait ainsi des pièces en électrum (un alliage d'or et d'argent) frappées à Sardes par le roi Alyattès, qui régna sur la Lydie entre 610 et 560 av. J.-C. Elles pouvaient s'échanger localement comme de quelconques bijoux.D'autres avantages furent trouver plus tard comme de faciliter les échanges de marchandises : dès lors que leur valeur, autrement dit leur poids en métal précieux, fut garantie par un roi ou une association de marchands, ces pièces purent en effet être échangées contre des marchandises beaucoup plus pondéreuses (bétail, céréales...).
+                    C'est ainsi que la monnaie devint le référentiel d'échange que nous connaissons.</p>
+        </section>
+<br><br>
+<section id="SectionMonnaie" class="Monnaie">                
+                <div class="PhotoMonnaie">
+                    <img width="200" height="1000" src="vercingetorix.png" >
+                </div>
+                <div class="TextePremiereMonnaie">
+                    <h1>L'origine de l'appellation monnaie</h1>
+                    <p>Au IIIème siècle avant JC est créé le premier atelier monétaire, au Capitole : il était auprès du temple de Junon, déesse « avertisseuse » dit « <U>moneta</U> » en latin : c’est l’origine du mot monnaie ! </p>              
+        </section>
+<br><br>
+<footer class="main-footer">
+        <div class="BasDePage">
+            <table width="100%">
+                <tr>
+                    <td width="70%">Nicolas SCHMITT 1ère2</td>
+                    <td width="10%"><button id = "#Top" onclick = "Remonter()">Remonter</button></td>
+                    <td width="10%"><button id = "Maps" onclick = "OuvrirMaps()">Me situer</button></td>
+                    <td width="10%"><button id = "Mode" onclick = "ChangerMode()">Mode Sombre</button></td>
+                </tr>
+                </table> 
+        </div>
+    </footer>
+</body>
+</html>

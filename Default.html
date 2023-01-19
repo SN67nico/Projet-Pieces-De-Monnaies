@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Pièce de monnaies</title>
+        <link rel="stylesheet" href="https://projetnsimonnaies.000webhostapp.com/ModeClair.css"/>
+        <script type="text/JavaScript">
+        function ChangerMode()
+        {
+                var Lib = document.getElementById("Mode").innerHTML;
+                if(Lib === "Mode Sombre")
+                {
+                    document.getElementById("Mode").innerHTML = "Mode Clair";
+                    document.getElementsByTagName("link")[0].href = "https://projetnsimonnaies.000webhostapp.com/ModeSombre.css";  
+                    document.getElementById("Logo").setAttribute('src', 'NapoNoir.png'); 
+                }
+                else
+                {
+                    document.getElementById("Mode").innerHTML = "Mode Sombre";
+                    document.getElementsByTagName("link")[0].href = "https://projetnsimonnaies.000webhostapp.com/ModeClair.css";
+                    document.getElementById("Logo").setAttribute('src', 'NapoBlanc.png'); 
+                }
+                document.getElementById("fantaisie").innerHTML = ''; 
+        }   
+        function OuvrirMaps()
+        {
+            window.open("OuvrirMaps.html","MeSituer","menubar=no, status=no, scrollbars=no, menubar=no, width=400, height=450");
+        }
+        
+        function ChangerModeFantaisie()
+        {  
+            var Lib = document.getElementById("AppelFantaisie").innerHTML;
+                {
+                    document.getElementById("AppelFantaisie").innerHTML = "Fantaisie";
+                    document.getElementsByTagName("link")[0].href = "https://projetnsimonnaies.000webhostapp.com/ModeFantaisie.css";  
+                    document.getElementById("Logo").setAttribute('src', 'NapoNoir.png'); 
+                    document.getElementById("fantaisie").innerHTML = '<p> <img src="./Fantaisie.gif" width="150" > </p>';
+                }     
+        }
+    </script>
+    </head>
+<body>
+        <br>
+        <br>
+        <br>
+        <nav class="menu">
+            <ul class="menu_ul">
+                <li><img id="Logo" width="100" height="100" src="NapoBlanc.png" ></li>
+                <li><a href="1)Les premieres monnaies.html" class="lien">Les Premières Monnaies</a> </li>
+                <li><a href="2)Leurs valeurs.html" class="lien">Leurs Valeurs</a> </li>
+                <li><a href="3)Leurs Matieres.html" class="lien">Leurs Matières</a> </li>
+                <li><a href="4)Euro.html" class="lien">L'Euro</a> </li>
+            </ul>
+        </nav>
+        <br>
+       <section id="SectionBienvenue" class="Bienvenue">                
+                <div class="TexteBienvenue">
+                    <h1>En apprendre d'avantage sur les pièces de monnaies</h1>
+                    <p>Vous trouverez sur ce site tout types d'informations utiles pour améliorer vos connaissances sur la numismatique.</p>
+                </div>
+                <div class="PhotoBienvenue">
+                    <img width="200" height="1000" src="Louis.png" >
+                </div>
+        </section>
+<br><br>
+<footer class="main-footer">
+        <div class="BasDePage">
+            <table width="100%">
+                <tr>
+                    <td width="70%">Nicolas SCHMITT 1ère2</td>
+                    <td width="10%"><button id = "Maps" onclick = "OuvrirMaps()">Me situer</button></td>
+                    <td width="10%"><button id = "AppelFantaisie" onclick = "ChangerModeFantaisie()">Fantaisie</button></td>
+                    <td width="10%"><button id = "Mode" onclick = "ChangerMode()">Mode Sombre</button></td>
+                </tr>
+                </table> 
+        </div>
+    </footer>
+ <div id = "fantaisie" align="center" ></div>
+</body>
+</html>
